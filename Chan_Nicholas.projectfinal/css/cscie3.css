@@ -1,0 +1,94 @@
+/*  csci3.css */
+body{
+    background-color: black;
+    color: greenyellow;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+html{
+    height:100%;
+}
+
+p{
+    max-width: 75%;
+    margin:auto;
+}
+
+/*pictures*/
+#introPic{
+    display:initial;      
+    }
+#beginPic, 
+#hqPic,
+#streetPic,
+#sitePic,
+#prisonPic,
+#shotPic,
+#crowdPic, 
+#rainPic, 
+#higherPic, 
+#bitePic, 
+.endPic{
+    display:none;
+} 
+
+/*Pages*/
+#intro{
+    display:initial;      
+    }   
+
+#beginAdventure,
+#page1,
+#page2,
+#page3,
+#page4,
+#page5,
+#page6,
+#page7,
+#page8,
+#page9,
+#page10,
+#page11,
+#page12,
+#page13,
+#page14,
+#dead,
+.end {
+    display:none;
+    }      
+
+#unfinished{
+    background-color:white;
+    color: red;
+    opacity:0.5;
+    text-align:center;
+    border-style: solid;
+    display:none;
+        }
+/*inputs, buttons & misc*/        
+#retry,
+#reload,
+.reload,
+#credits,
+.rollCredits{
+    display:none
+    }
+
+.rollCredits{
+    /*bottom:20px;*/
+    /*line-height:80%;*/
+    height:auto;
+    width:100%;
+    padding: 0;
+    margin-bottom:1px;
+    position:absolute;
+    top:100%;
+    overflow-y:hidden;
+    }
+
+.reload{
+    padding:0;
+}

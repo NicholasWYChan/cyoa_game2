@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/cscie3.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery_storyline.js"></script>
+        <title>Choose Your Own Adventure</title>
+    </head>   
+<body>
+        <audio id="city_rain" src="audio/city_rain.mp3" type="audio/mpeg" loop="true" poster="sorry, not supported"></audio>
+        <audio id="doom" src="audio/doom.mp3" type="audio/mpeg" loop="false" poster="sorry, not supported"></audio>
+        <audio id="wine" src="audio/wine.mp3" type="audio/mpeg" loop="false" poster="sorry, not supported"></audio>
+        <audio id="bar" src="audio/bar.mp3" type="audio/mpeg" loop="false" poster="sorry, not supported"></audio>
+        <audio id="lounge" src="audio/lounge.mp3" type="audio/mpeg" loop="true" poster="sorry, not supported"></audio>
+        <audio id="honk" class="audio" src="audio/honk.mp3" type="audio/mpeg" loop="false" poster="sorry, not supported"></audio>
+        <audio id="wind" src="audio/wind.mp3" type="audio/mpeg" loop="false" poster="sorry, not supported"></audio>
+    <div id="intro">                
+      <img id="introPic" src="img/Prologue.jpg" size="50%" width="50%">
+        <p>The year is 2090</p>
+        <p>For nearly half a century, Earth was scorched into a man-made wasteland, forcing people to congregate inside
+        the walls of what was habitable. Residing in such close spaces, authoritarianism ruled with such police figures
+        known as Judges.
+            <br><br>However, after significant &amp severe corruption fueled cognizance, the people of these Mega Cities
+            forced a renaissance. For the sake of the blazing planet, scientists were able to research &amp begin a
+            process to cool down climate, applying global showers. People were now able to exist outside the city walls,
+            congestion decreased rapidly, and the need for iron fisted justice became politically demonized. The over-powering
+            judge, jury, &amp executioners were now disbanded, outlawed, and considered fugitives. The sudden change had
+            created a resistance amongst the Judges, whom were ordered to bring themselves in. A violent push back was
+            imminent, knowing that behind those bars would be the people that they themselves had locked away. Only the ones
+            who were the first to turn themselves in were granted a chance for re-education.
+            <br><br> The return of situationalism has caused the justice system to pump the age old paradigm of investigation
+            back into the streets. Detectives were back, with nerfed authoritative power but also a tall first order: Bring
+            in any and all remaining Judges.
+        </p>
+            <p>As a former Judge, you have been granted a new beginning as part of the first wave of detectives. Your first assignment is not only tough but personal as you're forced to bring in the people who saw you as a colleague. The objective won't come easy, but with old habits, upholding strict law, you'll see this through.<br><br>
+            <button type="submit" name="proceed" id="proceed">Proceed</button>
+            </p>
+    </div>
+    <div id="beginAdventure" class="returnHQ">    
+      <img id="beginPic" src="img/Beginning.jpg" size="50%" width="50%">
+      <p>Your Adventure Begins</p>
+            <p>With the new wave of detectives being forced onto the streets early and to patrol beyond the walls of the Mega City, the graduating class is spread too thin. With the people upstairs, believing it's best to wait until the second wave of graduates, there are no partners, and each man must perform his duty alone. <br><br>You get a call about a supposed Judge sighting nearby. Knowing how physically capable the Judges were, you make a quick decision to either sprint to the sighting or check the database. <br><br>
+            <button type="submit" name="1st" id="1st">Run</button>
+                <button type="submit" name="2nd" class="clickToHQ" id="2nd">Go to HQ</button>
+            </p>    
+    </div>    
+    <div id="page1">
+      <img id="streetPic" src="img/Taxi.jpg" size="50%" width="50%">
+        <p>You decided to run</p>
+        <p>There are ups and downs about the noir age of policemen. You're severely underequiped but at least that means less weight to carry. The new monsoon seasons have been getting heavier and heavier with midday being dark enough to contrast each artifical light through the streets. You notice a odd void between cabs by the curb. The first cabbie always goes first. Somebody ran through there. </p>
+            <p>You Must Now Choose<br>
+                <input type="submit" name="choice1A" id="choice1A" value="Follow Suit">
+                <input type="submit" name="choice1B" id="choice1B" value="Keep Running">
+            </p>
+    </div>
+    <div id="page2">
+      <img id="hqPic" src="img/HQ.jpg" size="50%" width="50%">            
+        <p>You revert back to HQ</p>
+        <p>With the rush hour upon you, it would have been impossible to catch the Judge on foot. Instead you check the Mega City's CCTV for any clues on the suspect. The recordings show a tall figure running through the taxi line, causing a cabbie to screech to a hault. Despite the civilian clothing, you can see what could be bulky armor undearneath. This suspect is most definitely a Judge. Despite all that weight, you too would still be wearing bullet-proof equipment if you were being hunted.<br><br>Unfortunately, the call took place in the middle of rush hour, and there's a good chance the Judge was able to leg it far from the scene.</p>
+            <p>You Must Now Choose<br>
+                <input type="submit" name="choice2A" id="choice2A" class="endingClick" value="Drop Case">
+                <input type="submit" name="choice2B" id="choice2B" value="Check Scene">
+            </p>
+    </div>
+    <div id="page3" class="returnHQ">
+      <img id="sitePic" src="img/ConstructionSite.jpg" size="50%" width="50%">
+        <p>You ran through the taxi line</p>
+        <p>Through the taxis and an alleyway, you come out the other side to a halted contruction site. It's a deep hole. There's no other sign of disturbances on the street and the trail has gotten cold. Did the supposed Judge make it down there or did he keep going?</p>
+            <p>You Must Now Choose<br>
+                <input type="submit" name="choice2A1" id="choice3A" class="endingClick" value="Check the Hole">
+                <input type="submit" name="choice2A2" id="choice3B" class="clickToHQ" value="Return to HQ">
+            </p>
+    </div>
+    <div id="page4" class="returnHQ">
+      <img id="rainPic" class="rainPic" src="img/Rain.jpg" width="50%" height="50%">       
+        <p>You kept running</p>
+        <p>The newly created monsoon season is in full swing and it's beginning to pour hard. Visibility is low and the chances of finding the suspect is slim. You know your car is nearby and think it may be better to either head back and check Mega City's security cameras or perhaps find a better spot. </p>
+            <p>You Must Now Choose<br>
+                <input type="submit" name="choice2B1" id="choice4A" value="Higher Ground">
+                <input type="submit" name="choice2B2" id="choice4B" class="clickToHQ" value="Return to HQ">
+            </p>
+    </div>
+    <div id="page5" class="end">
+      <img id="prisonPic" class="endPic" src="img/Prison.jpg" size="50%" width="50%">
+        <p>You've dropped the case</p>
+        <p>The superiors find out and reprimand you severely. Being a former Judge, the IID has been keeping a close tab on you, making sure you're not a sympathizer of your old colleagues. The evidence immediately piles up against you and you're sent to the same prison where you once sentenced hundreds of other criminals.</p>
+            <p>Good Luck...<br></p>   
+    </div>
+    <div id="page6">
+      <img id="crowdPic" class="crowdPic" src="img/Crowd.jpg" size="50%" width="50%">
+        <p>You chose to head back to the scene</p>
+        <p>There's little chance of the Judge still being in the area if he knew he was spotted. Still, the new PD protocol requires a detective to check the area.<br><br>It's rush hour, and the newly created monsoon season is in full swing. Everybody is either booking it from work to head home or ducking into an izakaya for happy hour. Amidst the pushing workers, during their exodus, you see a slightly taller hooded member of the crowd. His shoulders- certainly broader than the ones around him- you figure that this may be your guy. There's too many people around though, and he's most definitely carrying something more powerful than your sidearm.</p>
+            <p>You Must Now Choose<br>
+                <input type="submit" name="1st" id="choice6A" class="endingClick" value="Approach the Figure">
+                <input type="submit" name="2nd" id="choice6B" value="Follow the Figure">
+            </p>
+    </div>
+    <div id="page7" class="end">
+      <img id="shotPic" class="endPic" src="img/Dead.png" width="50%" height="50%">
+        <p>You check the hole</p>
+        <p>While underequipped and with the Judge having the drop, the new life given to you comes to an abrupt end.</p>
+    </div>  
+    <div id="page8" class="continuePage">
+      <img id="bitePic" class="bitePic" src="img/BarAlley.jpg" width="50%" height="50%">
+        <p>You chose to grab something to eat</p>
+        <p>Ever since those rocket scientists started giving us cool &amp clean rain, mushrooms are back on the menu. The constant moisture makes them grow like crazy and so many izakaya places serve them now. People can't get enough of them. Time to find a decent place for a drink &amp a warm meal before the rain stops. </p>
+            <p>You Must Now Choose<br>
+                <input type="submit" name="1st" id="choice8A" class="continued" value="Bar on Your Left">
+                <input type="submit" name="2nd" id="choice8B" value="Keep Going">
+            </p>
+    </div>
+    <div id="page9" class="returnHQ">
+      <img id="higherPic" class="higherPic" src="img/RainyHighRise.jpg" width="50%" height="50%">    
+        <p>You sought higher ground</p>
+        <p>There's nothing much up here. The rain, while still hindering your visibility, is only getting worse. You mind as well take your vehicle elsewhere. </p>
+            <p>You Must Now Choose<br>
+                <input type="submit" name="1st" id="choice9A" value="Grab a Bite">
+                <input type="submit" name="2nd" id="choice9B" class="clickToHQ" value="Return to HQ">
+            </p>
+    </div>
+    <div id="page10">
+      <img id="shotPic" class="endPic" src="img/Dead.png" width="50%" height="50%">   
+        <p>You have chosen the second choice of the fifth list</p>
+        <p>Something Happened!</p>
+            <p>You Must Now Choose<br>
+                <input type="submit" name="1st" id="choice10A" value="First Choice">
+                <input type="submit" name="2nd" id="choice10B" value="Second Choice">
+            </p>
+    </div>
+    <div id="page11" class="continuePage">
+      <img id="gamblePic" class="gamblePic" src="img/OutsideDen.jpg" width="50%" height="50%">   
+        <p>You kept going</p>
+        <p>What's this? A place for low-lifes to hang out. Ever since the Judge purge started, petty criminals have been creeping out of their holes and making themselves a bit more comfortable. One thing you can be thankful for is the lack of esoteric uniforms they once had you &amp your colleagues wear. </p>
+            <p>You Must Now Choose<br>
+                <input type="submit" name="1st" id="choice11A" class="continued" value="Go Inside">
+                <input type="submit" name="2nd" id="choice11B" class="continued" value="Head Back">
+            </p>
+    </div>
+    <div id="page12">
+      <img id="" class="" src="img/Dead.png" width="50%" height="50%">   
+        <p>You have chosen the second choice of the sixth list</p>
+        <p>Something Happened!</p>
+            <p>You Must Now Choose<br>
+                <input type="submit" name="1st" id="choice12A" value="First Choice">
+                <input type="submit" name="2nd" id="choice12B" value="Second Choice">
+            </p>
+    </div>
+    <div id="page13" class="end">
+      <img id="shotPic" class="endPic" src="img/Dead.png" width="50%" height="50%">   
+        <p>You approached the figure</p>
+        <p>Judges are no fools, and with the pacifist training you received at the new academy, you're not as quick on your feet as you used to be.<br><br>He was fast.<br><br>You weren't.</p>
+
+    </div>
+    <div id="page14" class="continuePage">
+      <img id="trainPic" class="trainPic" src="img/TrainStation.jpg" width="50%" height="50%">   
+        <p>You decided to trail the man</p>
+        <p>What was he doing there? Only an idiot would stick around if they knew they were spotted, and they don't train these Judges to be idiots. He was looking for something.<br><br>Or someone. <br><br>There was only one way to understand out what was going on. Stopping behind the lead, arriving at a train station, only meant that he found what he was looking for. </p>
+            <p>You Must Now Choose<br>
+                <input type="submit" name="1st" id="choice14A" class="continued" value="Hop on Train">
+                <input type="submit" name="2nd" id="choice14B" class="continued" value="Stay Back">
+            </p>
+    </div>
+    <div id="unfinished" class="unfinished" style="margin:auto"> To Be Continued <br></div>
+    <div id="retry" class="retry">Click below to play again</div>
+        <div class='buttons'>
+            <input type="submit" name="reload" id="reload" class="reload" value="Reload" onClick="window.location.reload();">
+                <!-- Above line adjust for limited continues-->
+            <input type="submit" name="credits" id="credits" class="credits" value="End Credits"> 
+        </div>
+    <div class="rollCredits">
+        <h1>Imagery by @wihbe (http://imgur.com/user/wihbe)</h1>
+        <h1>Audio @ freesound.org under the Creative Commons License</h1>
+            <p>"rain" by loopbasedmusic</p>
+            <p>"doom" audio by Sarithyle</p>
+            <p>"lounge" audio by andriala</p>
+            <p>"honk" audio by Charel Sytze</p>
+            <p>"beer" audio by lilianazambranop</p>
+            <p>"wine" audio by Atkom<br></p>
+        <h1>Beta Testers</h1>
+            <p>Jacob Lang</p>
+            <p>Pat Lannigan</p>
+        <h1>Shot, Chopped but not Scored by Nicholas Chan<br><br><br><br><br><br></h1>
+        <h1>Hope You Enjoyed The Ride!...</h1>
+    </div>
+      
+</body>
+</html>
